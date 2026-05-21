@@ -1,16 +1,25 @@
-# React + Vite
+# Day 1 - React Props
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Scenario
+How to pass data from a parent component to a child component in React?
 
-Currently, two official plugins are available:
+## Solution
+Used **props** to pass dynamic data from parent to child components, making components reusable and flexible.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Implementation
+- Passed data as props from parent component
+- Accessed props in child component
+- Rendered dynamic content based on props
 
-## React Compiler
+## Key Learning
+Props help in creating reusable and maintainable components by enabling data flow between components.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Code Example
+```js
+function Parent() {
+  return <Child name="Raghavendra" />;
+}
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+function Child(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
