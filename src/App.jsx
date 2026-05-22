@@ -1,12 +1,14 @@
-import React from 'react'
-import Dropdown from './Day2-Dropdown/Dropdown'
-// import ParentComponent from './Day1-props/DataFromPCtoCC/ParentComponent'
+import React, { lazy, Suspense} from 'react'
+const LazyComponent = lazy(() => import('./Day3-LazyLoading/MyComponent'))
+
+
 
 const App = () => {
   return (
     <div>
-      {/* <ParentComponent/> */}
-      <Dropdown/>
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyComponent/>
+      </Suspense>
     </div>
   )
 }
