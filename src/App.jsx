@@ -1,14 +1,14 @@
-import React, { lazy, Suspense} from 'react'
-const LazyComponent = lazy(() => import('./Day3-LazyLoading/MyComponent'))
+import React from 'react'
+import UsingTernaryOperator from './Day4-ConditionalRendering/UsingTernaryOperator'
+import UsingLogicalANDOperator from './Day4-ConditionalRendering/UsingLogicalANDOperator'
 
 
 
 const App = () => {
   return (
     <div>
-      <Suspense fallback={<div>Loading...</div>}>
-        <LazyComponent/>
-      </Suspense>
+      <UsingTernaryOperator/>
+      <UsingLogicalANDOperator/>
     </div>
   )
 }
