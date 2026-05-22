@@ -1,10 +1,12 @@
 import React from 'react'
-import ParentComponent from './Day1-props/DataFromPCtoCC/ParentComponent'
+import Dropdown from './Day2-Dropdown/Dropdown'
+// import ParentComponent from './Day1-props/DataFromPCtoCC/ParentComponent'
 
 const App = () => {
   return (
     <div>
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
+      <Dropdown/>
     </div>
   )
 }
