@@ -1,13 +1,11 @@
 import React from 'react'
-import DataFetcher from './Day6-FetchData/DataFetcher'
-
-
+import ConditionalDropdown from './Day7-CondtionalDropdown/ConditionalDropdown'
 
 
 const App = () => {
   return (
     <div>
-      <DataFetcher/>
+      <ConditionalDropdown/>
     </div>
   )
 }
