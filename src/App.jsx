@@ -1,14 +1,12 @@
 import React from 'react'
-import UsingTernaryOperator from './Day4-ConditionalRendering/UsingTernaryOperator'
-import UsingLogicalANDOperator from './Day4-ConditionalRendering/UsingLogicalANDOperator'
+import Debouncing from './Day5-Debouncing/Debouncing'
 
 
 
 const App = () => {
   return (
     <div>
-      <UsingTernaryOperator/>
-      <UsingLogicalANDOperator/>
+      <Debouncing/>
     </div>
   )
 }
