@@ -1,12 +1,13 @@
 import React from 'react'
-import Debouncing from './Day5-Debouncing/Debouncing'
+import DataFetcher from './Day6-FetchData/DataFetcher'
+
 
 
 
 const App = () => {
   return (
     <div>
-      <Debouncing/>
+      <DataFetcher/>
     </div>
   )
 }
