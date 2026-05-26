@@ -1,11 +1,11 @@
 import React from 'react'
-import RadioButton from './Day9-RadioButton/RadioButton'
+import CounterComp from './Day10-CounterComponent/CounterComp'
 
 
 const App = () => {
   return (
     <div>
-       <RadioButton/>
+      <CounterComp/>
     </div>
   )
 }
