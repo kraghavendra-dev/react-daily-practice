@@ -1,11 +1,13 @@
 import React from 'react'
-import CounterComp from './Day10-CounterComponent/CounterComp'
+import ControlledComponent from './Day11-ControlledAndUncontrolled/ControlledComponent'
+import UncontrolledComponent from './Day11-ControlledAndUncontrolled/UncontrolledComponent'
 
 
 const App = () => {
   return (
     <div>
-      <CounterComp/>
+      <ControlledComponent/>
+      <UncontrolledComponent/>
     </div>
   )
 }
