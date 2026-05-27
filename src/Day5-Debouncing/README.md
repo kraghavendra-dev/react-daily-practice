@@ -12,7 +12,7 @@ Implemented **debouncing** to delay the execution of a function until the user s
 - Applied debouncing on input field (search use case)  
 - Prevented multiple API calls on every keystroke  
 
-## 🎯 Key Learning
+## Key Learning
 - Debouncing improves performance by reducing unnecessary function calls  
 - Useful in search inputs and API calls  
 - Helps control execution frequency based on user interaction  
