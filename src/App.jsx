@@ -1,18 +1,20 @@
-import React from 'react'
-import UserProfilePage from './Day12-Contextapi/UserProfilePage'
-import UserProvider from './Day12-Contextapi/UserContext'
-import UsersDetailsPage from './Day12-Contextapi/UsersDetailsPage'
+import React, { useContext } from 'react'
+import './App.css'
+import ThemeSwitcherComp from './Day13-ThemeSwitcher/ThemeSwitcherComp'
+import { ThemeContext } from './Day13-ThemeSwitcher/ThemeContext';
+
 
 
 
 const App = () => {
+  const { theme} = useContext(ThemeContext);
   return (
-    <div>
-      <UserProvider>
-          <UserProfilePage/>
-          <UsersDetailsPage/>
-      </UserProvider>
-        
+    <div className={ theme === "light" ? "light-theme" : "dark-theme" }>
+        <ThemeSwitcherComp/>
+        <ThemeSwitcherComp/>
+        <ThemeSwitcherComp/>
+        <ThemeSwitcherComp/>
+        <ThemeSwitcherComp/>
     </div>
   )
 }
