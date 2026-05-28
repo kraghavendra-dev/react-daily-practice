@@ -1,13 +1,18 @@
 import React from 'react'
-import ControlledComponent from './Day11-ControlledAndUncontrolled/ControlledComponent'
-import UncontrolledComponent from './Day11-ControlledAndUncontrolled/UncontrolledComponent'
+import UserProfilePage from './Day12-Contextapi/UserProfilePage'
+import UserProvider from './Day12-Contextapi/UserContext'
+import UsersDetailsPage from './Day12-Contextapi/UsersDetailsPage'
+
 
 
 const App = () => {
   return (
     <div>
-      <ControlledComponent/>
-      <UncontrolledComponent/>
+      <UserProvider>
+          <UserProfilePage/>
+          <UsersDetailsPage/>
+      </UserProvider>
+        
     </div>
   )
 }
