@@ -1,20 +1,11 @@
-import React, { useContext } from 'react'
-import './App.css'
-import ThemeSwitcherComp from './Day13-ThemeSwitcher/ThemeSwitcherComp'
-import { ThemeContext } from './Day13-ThemeSwitcher/ThemeContext';
-
-
-
+import React from 'react'
+import DataPage from './Day14-CustomHook/DataPage';
 
 const App = () => {
-  const { theme} = useContext(ThemeContext);
+
   return (
-    <div className={ theme === "light" ? "light-theme" : "dark-theme" }>
-        <ThemeSwitcherComp/>
-        <ThemeSwitcherComp/>
-        <ThemeSwitcherComp/>
-        <ThemeSwitcherComp/>
-        <ThemeSwitcherComp/>
+    <div>
+      <DataPage/>
     </div>
   )
 }
