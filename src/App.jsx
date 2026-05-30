@@ -1,14 +1,17 @@
 import React from 'react'
-import ExUseMemo from './Day15-useMemo/ExUseMemo'
+import InlineStyles from './Day16-ConditionalStyles/InlineStyles';
+import ConditionalClassName from './Day16-ConditionalStyles/ConditionalClassName';
 
 
 const App = () => {
 
   return (
     <div>
-      <ExUseMemo/>
+      <InlineStyles />
+      <ConditionalClassName />
     </div>
   )
 }
+  
 
 export default App
