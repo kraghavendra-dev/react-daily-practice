@@ -1,11 +1,12 @@
 import React from 'react'
-import DataPage from './Day14-CustomHook/DataPage';
+import ExUseMemo from './Day15-useMemo/ExUseMemo'
+
 
 const App = () => {
 
   return (
     <div>
-      <DataPage/>
+      <ExUseMemo/>
     </div>
   )
 }
